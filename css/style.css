@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Solway:wght@300;400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Solway", serif;
+  background-color: #c5e4e7; }
+
+.heading--main {
+  font-size: 3.1rem;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin-top: 5%;
+  color: #5e7a7d; }
+
+.container {
+  background-color: #ffffff;
+  width: 60%;
+  margin: 5% auto;
+  display: flex; }
+  @media (min-width: 1200px) {
+    .container {
+      width: 50%; } }
+  @media (max-width: 900px) {
+    .container {
+      width: 70%; } }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 75%; } }
+  .container__left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 768px) {
+      .container__left {
+        width: 90%; } }
+  .container__right {
+    background-color: #26c0ab;
+    padding: 3rem 2rem;
+    margin: 3rem auto;
+    flex: 1;
+    border-radius: 0.2rem; }
+    @media (max-width: 768px) {
+      .container__right {
+        width: 80%; } }
+
+.form {
+  padding: 3rem 2rem;
+  width: 100%; }
+  .form__label {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00494d;
+    padding: 0.7rem 0;
+    letter-spacing: 0.15rem; }
+  .form__input {
+    width: 100%;
+    display: block;
+    font-size: 1.8rem;
+    border: none;
+    padding: 0.4rem 0;
+    border-radius: 0.3rem;
+    background-color: #cfcfcf; }
+    .form__input--person {
+      background-image: url(../images/icon-person.svg);
+      background-repeat: no-repeat;
+      background-size: 3%;
+      background-position: 1rem; }
+    .form__input--bill {
+      background-image: url(../images/icon-dollar.svg);
+      background-repeat: no-repeat;
+      background-size: 3%;
+      background-position: 1rem; }
+    .form__input--custom {
+      margin-top: 0.5rem;
+      transition: all 0.2s; }
+    .form__input:focus {
+      outline: none;
+      background-image: none; }
+  .form__tip {
+    padding-top: 3.6rem;
+    width: 90%; }
+    .form__tip--text {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #00494d;
+      letter-spacing: 0.15rem; }
+    .form__tip--items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1.5rem; }
+    .form__tip--item {
+      height: 3.8rem; }
+      .form__tip--item:nth-child(3) > * {
+        background-color: #26c0ab; }
+      .form__tip--item:nth-child(6) > * {
+        background-color: #c5e4e7;
+        color: #00494d; }
+    .form__tip--button {
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      padding: 0.4rem;
+      border: none;
+      border-radius: 0.4rem;
+      background-color: #00494d;
+      font-size: 1.6rem;
+      font-weight: 700;
+      cursor: pointer; }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%); }
+
+.output {
+  width: 90%; }
+  .output__details {
+    display: flex;
+    justify-content: space-between; }
+    .output__details:not(:last-child) {
+      margin-bottom: 5rem; }
+  .output__btn {
+    width: 100%;
+    margin-top: 7rem;
+    text-align: center; }
+  .output--text-primary {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    color: #ffffff; }
+  .output--text-secondary {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    color: #00494d;
+    padding: 1rem 0;
+    word-spacing: 0.6rem; }
+  .output__value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00494d; }
+
+.reset-btn {
+  display: inline-block;
+  width: 90%;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #00494d;
+  color: #c5e4e7;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s; }
+  .reset-btn:active {
+    transform: translate(-0.3rem, 0.1rem); }
+
+.tip,
+.person {
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+@media (max-width: 768px) {
+  .output__value {
+    font-size: 2.3rem; }
+  .form__input--bill,
+  .form__input--person {
+    background-size: 2.5%; } }
