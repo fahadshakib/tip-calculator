@@ -1,7 +1,7 @@
-#####Tip Calculator
+**Tip Calculator**
 
 
-######A mini javascript project to calculate Tip among customers
+**A mini javascript project to calculate Tip among customers**
 
 
 
