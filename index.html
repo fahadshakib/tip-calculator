@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <h2 class="heading--main">Tip Calculator</h2>
+    <div class="container">
+      <div class="container__left">
+        <div action="#" class="form">
+          <div class="form__bill">
+            <label for="bill" class="form__label">Bill</label>
+            <input
+              type="text"
+              id="bill"
+              class="form__input form__input--bill"
+            />
+          </div>
+          <div class="form__tip">
+            <p class="form__tip--text">
+              Select tip : <span class="tip">0</span>
+            </p>
+            <div class="form__tip--items">
+              <div class="form__tip--item">
+                <button class="form__tip--button" value="5">5%</button>
+              </div>
+              <div class="form__tip--item">
+                <button class="form__tip--button" value="10">10%</button>
+              </div>
+              <div class="form__tip--item">
+                <button class="form__tip--button" value="15">15%</button>
+              </div>
+              <div class="form__tip--item">
+                <button class="form__tip--button" value="25">25%</button>
+              </div>
+              <div class="form__tip--item">
+                <button class="form__tip--button" value="50">50%</button>
+              </div>
+              <div class="form__tip--item">
+                <button class="form__tip--button form__tip--button-custom">
+                  custom
+                </button>
+              </div>
+            </div>
+          </div>
+          <input
+            type="text"
+            id="people"
+            class="form__input form__input--custom hidden"
+          />
+
+          <div class="form__people">
+            <label for="people" class="form__label"
+              >Number of people : <span class="person">0</span></label
+            >
+            <input
+              type="text"
+              id="people"
+              class="form__input form__input--person"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <div class="output">
+          <div class="output__details">
+            <div class="output--text">
+              <p class="output--text-primary">Tip Amount</p>
+              <p class="output--text-secondary">&#47;&nbsp;person</p>
+            </div>
+            <p class="output__value output__value-tip">$0.0</p>
+          </div>
+          <div class="output__details">
+            <div class="output--text">
+              <p class="output--text-primary">Total</p>
+              <p class="output--text-secondary">&#47;&nbsp;person</p>
+            </div>
+            <p class="output__value output__value-total">$0.0</p>
+          </div>
+          <div class="output__btn">
+            <button class="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script  src="./dist/js/scripts.js"></script>
+  </body>
+</html>
