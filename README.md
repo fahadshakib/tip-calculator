@@ -1,6 +1,9 @@
 #####Tip Calculator
 
+
 ######A mini javascript project to calculate Tip among customers
+
+
 
 >This project was built using **Html** , **Css** and **Javascript**
 
